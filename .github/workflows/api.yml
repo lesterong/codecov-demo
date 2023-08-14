@@ -19,3 +19,5 @@ jobs:
         run: pytest --cov=api.smiles --cov-report=xml:smiles-coverage.xml
       - name: Upload coverage reports to Codecov with GitHub Action
         uses: codecov/codecov-action@v3
+        with:
+          flags: backend
